@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playground</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+
+    h1{
+      text-align: center;
+    }
+
+
+    #container{
+      display: flex;
+      /* flex-direction: row; */
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+      .box{
+        background-color: rgb(125, 125, 246);
+        width: 44px;
+        height: 80px;
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+
+      .clrBox{
+        width: 44px;
+        height: 80px;
+        margin-right: 5px;
+        padding: 10px;
+      }
+
+  </style>
+
+  </head>
+  <body>
+
+    <h1>Welcome!</h1>
+
+    <div id="container">
+
+      {# Level 1
+        {% for x in range(0,times): %}
+        <div class="box"> </div>
+        {% endfor %}
+      #}
+
+
+        {% for i in range(0, times): %}
+        <div class="box"> </div>
+        {% endfor %}
+
+        {#
+          {{newHtml|safe}}
+        #}
+
+        {% for i in range (number): %}
+        <div class = "box" style="background-color: {{color}}"></div>
+        {% endfor %}
+
+    </div>
+
+
+  </body>
+</html>
